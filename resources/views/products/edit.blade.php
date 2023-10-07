@@ -1,7 +1,12 @@
-htmlCopy code@extends('layouts.app')
-
-@section('content')
-    <h2>Edit Produk</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Edit Produk</h2>
     <form action="{{ route('products.update', $product->id) }}" method="POST">
         @csrf
         @method('PUT')
@@ -19,4 +24,5 @@ htmlCopy code@extends('layouts.app')
         </div>
         <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
     </form>
-@endsection
+</body>
+</html>
