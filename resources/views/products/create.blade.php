@@ -1,7 +1,12 @@
-htmlCopy code@extends('layouts.app')
-
-@section('content')
-    <h2>Tambah Produk Baru</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Tambah Produk Baru</h2>
     <form action="{{ route('products.store') }}" method="POST">
         @csrf
         <div class="form-group">
@@ -18,4 +23,6 @@ htmlCopy code@extends('layouts.app')
         </div>
         <button type="submit" class="btn btn-primary">Simpan</button>
     </form>
-@endsection
+    
+</body>
+</html>
